@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Welcome to the Train Seat Reservation System</h1>
+<p>Reserve your seats by entering the number below:</p>
+
+<input type="number" [(ngModel)]="seatCount" min="1" max="7" />
+<button (click)="bookSeats()">Reserve Seats</button>
+
+<p *ngIf="bookedSeats.length > 0">Seats booked: {{ bookedSeats.join(', ') }}</p>
+
+<hello></hello> <!-- hello component inclusion -->
+</div>
